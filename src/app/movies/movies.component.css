@@ -1,0 +1,64 @@
+.movie{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-body {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
+
+.watch-button {
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+@media (max-width: 767px) {
+
+    .col-lg-3,
+    .col-md-4,
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .spinner-border {
+    animation: spin 2s linear infinite;
+} */
